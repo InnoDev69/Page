@@ -1,0 +1,16 @@
+{
+    "name": "ctkdesigner-landing-page",
+    "version": "1.0.0",
+    "description": "Landing page for CTkDesigner",
+    "main": "index.js",
+    "scripts": {
+      "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+      "watch:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    },
+    "dependencies": {},
+    "devDependencies": {
+      "tailwindcss": "^3.3.0"
+    }
+  }
+  
+  

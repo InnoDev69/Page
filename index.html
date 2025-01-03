@@ -1,38 +1,67 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diseñador de Interfaces CustomTkinter - Descargar</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>CTkDesigner</title>
+    <link href="./dist/output.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>Diseñador de Interfaces CustomTkinter</h1>
-        <p>Una herramienta poderosa para crear interfaces gráficas interactivas</p>
-    </header>
-    <main>
-        <section class="app-preview">
-            <img src="image.png" alt="Captura de pantalla de la aplicación" id="app-screenshot">
-        </section>
-        <section class="app-info">
-            <h2>Descripción de la Aplicación</h2>
-            <p>Esta aplicación es una herramienta de diseño de interfaces gráficas interactivas desarrollada con la biblioteca CustomTkinter. Está diseñada para simplificar la creación y personalización de ventanas y widgets visuales mediante una interfaz intuitiva y funcional.</p>
-            <h3>Características Principales:</h3>
-            <ul>
-                <li>Ventana Virtual para diseñar interfaces</li>
-                <li>Barra de Herramientas con funciones de importación/exportación</li>
-                <li>Configuración en Tiempo Real de widgets</li>
-                <li>Esquema Jerárquico de elementos</li>
-                <li>Modo Oscuro/Claro compatible</li>
-            </ul>
-            <h4>Donaciones: 4530000800019963871026</h4>
-            <button id="download-btn">Descargar Aplicación</button>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Tu Empresa. Todos los derechos reservados.</p>
-    </footer>
+<body class="min-h-screen bg-gray-900 text-gray-300">
+    <div class="container mx-auto px-4 py-16">
+        <header class="text-center mb-16">
+            <h1 id="title" class="text-6xl font-extrabold mb-4 text-gray-100"></h1>
+            <p id="description" class="text-2xl font-light mb-8 text-gray-400"></p>
+            <button id="langToggle" class="bg-primary hover:bg-secondary text-gray-100 font-semibold py-2 px-6 rounded-full transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-50">
+                English
+            </button>
+        </header>
+
+        <main class="space-y-24">
+            <section class="flex flex-col md:flex-row items-center justify-between gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-bold mb-6 text-gray-100">CTkDesigner</h2>
+                    <p id="longDescription" class="text-xl leading-relaxed text-gray-400"></p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="/placeholder.svg" alt="CTkDesigner Screenshot" class="w-full h-auto rounded-lg shadow-2xl border border-gray-700">
+                </div>
+            </section>
+
+            <section>
+                <h2 id="featuresTitle" class="text-4xl font-bold mb-12 text-center text-gray-100"></h2>
+                <div id="featuresList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Features will be dynamically inserted here -->
+                </div>
+            </section>
+
+            <section class="bg-gray-800 rounded-xl p-12 shadow-2xl border border-gray-700">
+                <h2 id="workflowTitle" class="text-4xl font-bold mb-8 text-center text-gray-100"></h2>
+                <div id="workflowSteps" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Workflow steps will be dynamically inserted here -->
+                </div>
+            </section>
+
+            <section>
+                <h2 id="getStartedTitle" class="text-4xl font-bold mb-12 text-center text-gray-100"></h2>
+                <div id="getStartedSteps" class="space-y-8">
+                    <!-- Get started steps will be dynamically inserted here -->
+                </div>
+            </section>
+
+            <section class="bg-gray-800 rounded-xl p-12 shadow-2xl border border-gray-700">
+                <h2 id="usageTitle" class="text-4xl font-bold mb-8 text-center text-gray-100"></h2>
+                <div id="usageSteps" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Usage steps will be dynamically inserted here -->
+                </div>
+            </section>
+        </main>
+
+        <footer class="mt-24 text-center text-gray-500">
+            <p>&copy; 2023 CTkDesigner. All rights reserved.</p>
+        </footer>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
+
